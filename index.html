@@ -1316,7 +1316,7 @@ function sendChat() {
     return { role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] };
   });
 
-  fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDxSOzR5XL5LOIxTSWzG9HGsLFu6F24GuU", {
+  fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyBKrGC7K7laWFf-8YdCORdx7HjMHeSNLIQ", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
