@@ -220,24 +220,6 @@ section{padding:88px 0}
 .submit-btn:hover{background:var(--accent);box-shadow:0 8px 24px rgba(244,124,32,.4);transform:translateY(-1px)}
 .submit-btn:disabled{opacity:.6;cursor:not-allowed;transform:none}
 .form-note{text-align:center;font-size:.7rem;color:var(--muted);margin-top:9px}
-/* Google Form CTA card styles */
-.gform-open-btn{display:flex;align-items:center;gap:16px;background:linear-gradient(135deg,var(--accent),#d96c10);color:#fff;border-radius:16px;padding:20px 22px;text-decoration:none;transition:.22s;margin:18px 0 16px;box-shadow:0 8px 28px rgba(244,124,32,.35)}
-.gform-open-btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px rgba(244,124,32,.5)}
-.gform-open-icon{font-size:1.8rem;flex-shrink:0}
-.gform-open-text{flex:1;min-width:0}
-.gform-open-text strong{font-family:"Syne",sans-serif;font-size:1rem;font-weight:800;display:block;line-height:1.2}
-.gform-open-text small{font-size:.74rem;opacity:.85;margin-top:3px;display:block;font-weight:400}
-.gform-open-arrow{font-size:1.3rem;flex-shrink:0;opacity:.85}
-.gform-info-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px}
-.gform-info-item{display:flex;align-items:center;gap:6px;font-size:.74rem;color:var(--mid);font-weight:500}
-.gform-divider{height:1px;background:var(--line);margin:4px 0 20px}
-.gform-alt p{font-size:.78rem;color:var(--muted);margin-bottom:12px;text-align:center}
-.gform-alt-btns{display:flex;gap:10px}
-.gform-alt-btn{flex:1;display:flex;align-items:center;justify-content:center;gap:7px;padding:12px;border-radius:12px;font-family:"Syne",sans-serif;font-size:.82rem;font-weight:700;text-decoration:none;transition:.2s}
-.gform-alt-btn.ph{background:var(--bg2);border:1px solid var(--line);color:var(--ink)}
-.gform-alt-btn.ph:hover{border-color:var(--accent);color:var(--accent)}
-.gform-alt-btn.wa{background:#25d366;color:#fff;border:1px solid #25d366}
-.gform-alt-btn.wa:hover{background:#1ebe5d}
 .success-box{display:none;margin-top:15px;padding:15px 18px;background:rgba(23,163,74,.08);border:1px solid rgba(23,163,74,.22);border-radius:10px;font-size:.84rem;font-weight:600;color:var(--green);text-align:center}
 .err-msg{font-size:.65rem;color:var(--red);margin-top:3px;display:none}
 .fg input.err~.err-msg,.fg select.err~.err-msg{display:block}
@@ -269,6 +251,7 @@ section{padding:88px 0}
 .ct-ico.wa{background:linear-gradient(135deg,#22c55e,#16a34a)}
 .ct-ico.loc{background:linear-gradient(135deg,#f47c20,#dc6010)}
 .ct-ico.hr{background:linear-gradient(135deg,#3b82f6,#1d4ed8)}
+.ct-ico.mail{background:linear-gradient(135deg,#8b5cf6,#6d28d9)}
 .ct-info .lbl{font-size:.62rem;color:rgba(255,255,255,.37);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
 .ct-info .val{font-size:.88rem;font-weight:600;color:#fff;margin-top:1px}
 .ct-info a{color:#fff;text-decoration:none;transition:.18s}
@@ -424,7 +407,7 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
 
 <div class="topbar">
   <div class="topbar-inner">
-    <div class="topbar-left">Call us: <strong>80159 36626</strong> &nbsp;·&nbsp; AV Mentora Solutions — Education Counselling, TN</div>
+    <div class="topbar-left">📞 <strong>90255 86660</strong> &nbsp;·&nbsp; ✉️ <strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="46273021342933363574707e7606212b272f2a6825292b">[email&#160;protected]</a></strong> &nbsp;·&nbsp; AV Mentora Solutions</div>
     <div class="topbar-right">
       <div class="lang-group">
         <button class="lang-btn active" id="btn-en" onclick="setLang('en')">English</button>
@@ -486,7 +469,7 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
         <p class="hero-sub" data-key="hero_sub">Personalized guidance for TNEA, NEET MBBS, TANCA, TN Health &amp; Arts and Science — tailored to your marks, community, and career goals. We make admissions simple.</p>
         <div class="hero-ctas">
           <a href="javascript:void(0)" onclick="navTo('apply')" class="btn-fill" data-key="hero_cta1">📋 Fill Application</a>
-          <a href="tel:8015936626" class="btn-ghost" data-key="hero_cta2">📞 Call 80159 36626</a>
+          <a href="tel:9025586660" class="btn-ghost" data-key="hero_cta2">📞 Call 90255 86660</a>
         </div>
         <div class="hero-badges">
           <div class="hbadge"><span class="tick">✓</span><span data-key="badge1">TNEA Counselling</span></div>
@@ -501,8 +484,8 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
         <div class="hero-card">
           <div class="hc-label" data-key="hc_label">Reach Us Directly</div>
           <div class="cs-list">
-            <div class="cs-item"><div class="cs-ico g">📞</div><div class="cs-info"><div class="lbl" data-key="cs_call_lbl">Call Anytime</div><div class="val"><a href="tel:8015936626">+91 80159 36626</a></div></div></div>
-            <div class="cs-item"><div class="cs-ico w">💬</div><div class="cs-info"><div class="lbl">WhatsApp</div><div class="val"><a href="https://wa.me/918015936626" target="_blank" rel="noopener" data-key="cs_wa_val">Chat with us now</a></div></div></div>
+            <div class="cs-item"><div class="cs-ico g">📞</div><div class="cs-info"><div class="lbl" data-key="cs_call_lbl">Call Anytime</div><div class="val"><a href="tel:9025586660">+91 90255 86660</a></div></div></div>
+            <div class="cs-item"><div class="cs-ico w">💬</div><div class="cs-info"><div class="lbl">WhatsApp</div><div class="val"><a href="https://wa.me/919025586660" target="_blank" rel="noopener" data-key="cs_wa_val">Chat with us now</a></div></div></div>
             <div class="cs-item"><div class="cs-ico o">📍</div><div class="cs-info"><div class="lbl" data-key="cs_loc_lbl">Service Area</div><div class="val" data-key="cs_loc_val">All of Tamil Nadu</div></div></div>
           </div>
           <div class="hc-cta"><a href="javascript:void(0)" onclick="navTo('apply')" data-key="hc_cta">Start Free Consultation →</a></div>
@@ -516,12 +499,12 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
   <div class="ticker-inner">
     <span data-key="tick1">TNEA 2026 Counselling — Register Now</span>
     <span data-key="tick2">NEET MBBS 2026 Admissions — Get Guidance</span>
-    <span data-key="tick3">Free Consultation — Call 80159 36626</span>
+    <span data-key="tick3">Free Consultation — Call 90255 86660</span>
     <span data-key="tick4">Management Quota — Engineering, MBBS, Arts &amp; Science</span>
     <span data-key="tick5">TANCA MBA / MCA / M.Tech Guidance Available</span>
     <span data-key="tick1">TNEA 2026 Counselling — Register Now</span>
     <span data-key="tick2">NEET MBBS 2026 Admissions — Get Guidance</span>
-    <span data-key="tick3">Free Consultation — Call 80159 36626</span>
+    <span data-key="tick3">Free Consultation — Call 90255 86660</span>
     <span data-key="tick4">Management Quota — Engineering, MBBS, Arts &amp; Science</span>
     <span data-key="tick5">TANCA MBA / MCA / M.Tech Guidance Available</span>
   </div>
@@ -635,51 +618,186 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
       </div>
       <div class="form-card">
         <div class="fc-title" data-key="fc_title">📝 Application Form</div>
-        <div class="fc-sub" data-key="fc_sub">Click the button below to open the application form. We respond within 24 hours.</div>
-
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLScnADyVlX01Tp5rzfey-faM4i61ClfShmwz1bOcZrYbWcggZQ/viewform?usp=dialog"
-           target="_blank" rel="noopener"
-           class="gform-open-btn">
-          <span class="gform-open-icon">📋</span>
-          <span class="gform-open-text">
-            <strong data-key="gform_title">Open Application Form</strong>
-            <small data-key="gform_sub">Opens in a new tab · Takes ~3 minutes</small>
-          </span>
-          <span class="gform-open-arrow">↗</span>
-        </a>
-
-        <div class="gform-info-row">
-          <div class="gform-info-item"><span>✅</span><span data-key="gi1">Free consultation</span></div>
-          <div class="gform-info-item"><span>⚡</span><span data-key="gi2">24-hour response</span></div>
-          <div class="gform-info-item"><span>🔒</span><span data-key="gi3">Your data is safe</span></div>
-        </div>
-
-        <div class="gform-divider"></div>
-
-        <div class="gform-alt">
-          <p data-key="gform_alt_label">Prefer to reach us directly?</p>
-          <div class="gform-alt-btns">
-            <a href="tel:8015936626" class="gform-alt-btn ph">📞 <span data-key="gform_call">Call Us</span></a>
-            <a href="https://wa.me/918015936626" target="_blank" rel="noopener" class="gform-alt-btn wa">💬 <span data-key="gform_wa">WhatsApp</span></a>
+        <div class="fc-sub" data-key="fc_sub">Fields marked * are required. We respond within 24 hours.</div>
+        <div class="gform-banner">
+          <div class="gform-icon">📋</div>
+          <div class="gform-text">
+            <strong data-key="gform_title">Prefer Google Form?</strong>
+            <span data-key="gform_sub">Easier on mobile — opens in a new tab</span>
           </div>
+          <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="gform-btn" data-key="gform_btn">Open Form →</a>
         </div>
+        <div class="form-divider"><span data-key="form_or">— or fill below —</span></div>
+        <form id="appForm" novalidate>
+          <div class="fg-section" data-key="fsec1">📋 Personal Details</div>
+          <div class="frow">
+            <div class="fg"><label data-key="f_name">Student Name *</label><input type="text" id="fName" autocomplete="name" placeholder="Full name"><div class="err-msg">Enter valid name (min 2 chars)</div></div>
+            <div class="fg"><label data-key="f_dob">Date of Birth</label><input type="date" id="fDob"></div>
+          </div>
+          <div class="frow">
+            <div class="fg"><label data-key="f_mob">Student Mobile *</label><input type="tel" id="fMob" maxlength="10" inputmode="numeric" placeholder="10-digit number"><div class="err-msg">Enter valid 10-digit mobile</div></div>
+            <div class="fg"><label data-key="f_pmob">Parent Mobile *</label><input type="tel" id="fPmob" maxlength="10" inputmode="numeric" placeholder="10-digit number"><div class="err-msg">Enter valid 10-digit mobile</div></div>
+          </div>
+          <div class="fg"><label data-key="f_email">Email Address</label><input type="email" id="fEmail" autocomplete="email" placeholder="email@example.com"></div>
 
-        <!-- Hidden stub — keeps legacy JS references alive -->
-        <form id="appForm" novalidate style="display:none">
-          <input type="hidden" id="fName"><input type="hidden" id="fDob">
-          <input type="hidden" id="fMob"><input type="hidden" id="fPmob">
-          <input type="hidden" id="fEmail"><select id="fSchoolType"></select>
-          <select id="fBoard"></select><select id="f11thGroup"></select>
-          <div class="cutoff-hint" id="cutoffHint"></div>
-          <label id="cutoffLabel"></label>
-          <input type="hidden" id="fCutoff"><select id="fCom"></select>
-          <select id="fFirstGrad"></select>
-          <select id="fStream"></select><select id="fBranch"></select>
-          <select id="fDist"></select><select id="fType"></select>
-          <textarea id="fNote"></textarea>
-          <button type="submit" class="submit-btn">Submit</button>
+          <div class="fg-section" data-key="fsec2">🎓 Academic Background</div>
+          <div class="frow">
+            <div class="fg">
+              <label data-key="f_school_type">School Type (6th–12th) *</label>
+              <select id="fSchoolType"><option value="">-- Select --</option><option value="govt">Government School</option><option value="govt_aided">Government-Aided School</option><option value="private">Private School</option><option value="central_govt">Central Govt. School (KV / JNV)</option><option value="cbse_private">Private CBSE School</option><option value="international">International School</option></select>
+              <div class="err-msg">Please select school type</div>
+            </div>
+            <div class="fg">
+              <label data-key="f_board">Board of Study *</label>
+              <select id="fBoard"><option value="">-- Select --</option><option value="stateboard">TN State Board (Samacheer Kalvi)</option><option value="matriculation">Matriculation Board (TN)</option><option value="cbse">CBSE</option><option value="icse">ICSE / ISC</option><option value="anglo">Anglo Indian Board</option><option value="ib">IB (International Baccalaureate)</option><option value="igcse">Cambridge IGCSE / A Levels</option><option value="other_board">Other Board</option></select>
+              <div class="err-msg">Please select board</div>
+            </div>
+          </div>
+          <div class="fg">
+            <label data-key="f_11th_group">Group taken in 11th &amp; 12th Standard *</label>
+            <select id="f11thGroup" onchange="updateCutoffHint()">
+              <option value="">-- Select your Group --</option>
+              <optgroup label="Science — Maths Stream">
+                <option value="maths_bio">Bio-Maths: Physics, Chemistry, Maths, Biology</option>
+                <option value="maths_cs">Maths-CS: Physics, Chemistry, Maths, Computer Science</option>
+                <option value="maths_stats">Maths, Physics, Chemistry, Statistics</option>
+                <option value="maths_bio_cs">Physics, Chemistry, Maths, Biology, Computer Science</option>
+                <option value="maths_biochem">Maths, Physics, Chemistry, Bio-Chemistry</option>
+                <option value="maths_nutrition">Maths, Physics, Chemistry, Nutrition &amp; Dietetics</option>
+                <option value="maths_only">Pure Science: Maths, Physics, Chemistry</option>
+              </optgroup>
+              <optgroup label="Science — Biology Stream">
+                <option value="bio_cs">Physics, Chemistry, Biology, Computer Science</option>
+                <option value="bio_micro">Physics, Chemistry, Biology, Micro Biology</option>
+                <option value="bio_botany_zoo">Physics, Chemistry, Botany, Zoology</option>
+                <option value="bio_nutrition">Physics, Chemistry, Biology, Nutrition &amp; Dietetics</option>
+              </optgroup>
+              <optgroup label="Commerce Stream">
+                <option value="commerce">Commerce, Economics, Accountancy, Business Maths</option>
+                <option value="commerce_cs">Commerce, Economics, Accountancy, Computer Science</option>
+                <option value="commerce_stats">Commerce, Economics, Accountancy, Statistics</option>
+                <option value="commerce_biz">Commerce, Economics, Business Studies, Accountancy</option>
+              </optgroup>
+              <optgroup label="Arts / Humanities Stream">
+                <option value="arts_history">History, Geography, Economics, Civics</option>
+                <option value="arts_lit">Tamil / English Literature, History, Economics</option>
+                <option value="arts_pol">Political Science, History, Economics, Geography</option>
+                <option value="arts_sociology">Sociology, History, Geography, Economics</option>
+              </optgroup>
+              <optgroup label="Vocational / CBSE / Other">
+                <option value="vocational">Vocational Group (TN Board)</option>
+                <option value="cbse_science">CBSE Science Stream (PCM / PCB)</option>
+                <option value="cbse_commerce">CBSE Commerce Stream</option>
+                <option value="cbse_arts">CBSE Arts / Humanities</option>
+                <option value="other_group">Other Group</option>
+              </optgroup>
+            </select>
+            <div class="cutoff-hint" id="cutoffHint"></div>
+            <div class="err-msg">Please select your group</div>
+          </div>
+          <div class="frow">
+            <div class="fg">
+              <label id="cutoffLabel" data-key="f_cutoff">12th Marks / Cut-off / NEET Score *</label>
+              <input type="number" id="fCutoff" step="0.01" min="0" max="720" placeholder="e.g. 175 (cutoff) or 580 (NEET)">
+              <div class="err-msg">Please enter your marks or score</div>
+            </div>
+            <div class="fg">
+              <label data-key="f_com">Community *</label>
+              <select id="fCom"><option value="">-- Select --</option><option value="OC">OC (Open Category)</option><option value="BC">BC (Backward Class)</option><option value="BCM">BCM (BC Muslim)</option><option value="MBC">MBC / DNC</option><option value="SC">SC (Scheduled Caste)</option><option value="SCA">SCA (Arunthathiyar)</option><option value="ST">ST (Scheduled Tribe)</option></select>
+              <div class="err-msg">Please select community</div>
+            </div>
+          </div>
+          <div class="fg">
+            <label data-key="f_first_grad">First Graduate in Your Family? *</label>
+            <select id="fFirstGrad"><option value="">-- Select --</option><option value="yes">Yes — I will be the first graduate in my family</option><option value="no">No — Others in my family have completed graduation</option></select>
+            <div class="err-msg">Please select an option</div>
+          </div>
+
+          <div class="fg-section" data-key="fsec3">🏫 Counselling Preferences</div>
+          <div class="frow">
+            <div class="fg">
+              <label data-key="f_stream">Stream / Course *</label>
+              <select id="fStream" onchange="updateBranchOptions()">
+                <option value="">-- Select --</option>
+                <option value="engineering">Engineering (TNEA)</option>
+                <option value="mbbs">MBBS / Medical (NEET)</option>
+                <option value="pg">PG Engineering / Medical (TANCA / NEET-PG)</option>
+                <option value="arts_science">Arts &amp; Science (UG)</option>
+                <option value="tn_health">TN Health Sciences (Paramedical / Nursing)</option>
+                <option value="bds">BDS / Dental</option>
+                <option value="pharmacy">B.Pharm / Pharm.D</option>
+                <option value="allied">Allied Health Sciences</option>
+                <option value="law">Law (BA LLB / BBA LLB / LLB)</option>
+                <option value="management">MBA / Management</option>
+              </select>
+              <div class="err-msg">Please select a stream</div>
+            </div>
+            <div class="fg">
+              <label data-key="f_branch">Preferred Branch / Specialization *</label>
+              <select id="fBranch"><option value="">-- Select stream first --</option></select>
+              <div class="err-msg">Please select branch</div>
+            </div>
+          </div>
+          <div class="frow">
+            <div class="fg">
+              <label data-key="f_dist">Preferred District *</label>
+              <select id="fDist">
+                <option value="">-- Select District --</option>
+                <optgroup label="Major Cities">
+                  <option value="Chennai">Chennai</option><option value="Coimbatore">Coimbatore</option>
+                  <option value="Madurai">Madurai</option><option value="Tiruchirappalli">Tiruchirappalli (Trichy)</option>
+                  <option value="Salem">Salem</option>
+                </optgroup>
+                <optgroup label="Districts A–K">
+                  <option value="Ariyalur">Ariyalur</option><option value="Chengalpattu">Chengalpattu</option>
+                  <option value="Cuddalore">Cuddalore</option><option value="Dharmapuri">Dharmapuri</option>
+                  <option value="Dindigul">Dindigul</option><option value="Erode">Erode</option>
+                  <option value="Kallakurichi">Kallakurichi</option><option value="Kancheepuram">Kancheepuram</option>
+                  <option value="Kanyakumari">Kanyakumari</option><option value="Karur">Karur</option>
+                  <option value="Krishnagiri">Krishnagiri</option>
+                </optgroup>
+                <optgroup label="Districts M–R">
+                  <option value="Mayiladuthurai">Mayiladuthurai</option><option value="Nagapattinam">Nagapattinam</option>
+                  <option value="Namakkal">Namakkal</option><option value="Nilgiris">Nilgiris (Ooty)</option>
+                  <option value="Perambalur">Perambalur</option><option value="Pudukkottai">Pudukkottai</option>
+                  <option value="Ramanathapuram">Ramanathapuram</option><option value="Ranipet">Ranipet</option>
+                </optgroup>
+                <optgroup label="Districts S–V">
+                  <option value="Sivaganga">Sivaganga</option><option value="Tenkasi">Tenkasi</option>
+                  <option value="Thanjavur">Thanjavur</option><option value="Theni">Theni</option>
+                  <option value="Thoothukudi">Thoothukudi (Tuticorin)</option><option value="Tirunelveli">Tirunelveli</option>
+                  <option value="Tirupattur">Tirupattur</option><option value="Tirupur">Tirupur</option>
+                  <option value="Tiruvallur">Tiruvallur</option><option value="Tiruvannamalai">Tiruvannamalai</option>
+                  <option value="Tiruvarur">Tiruvarur</option><option value="Vellore">Vellore</option>
+                  <option value="Villupuram">Villupuram</option><option value="Virudhunagar">Virudhunagar</option>
+                </optgroup>
+                <option value="Any">Any / Open to all Tamil Nadu</option>
+              </select>
+              <div class="err-msg">Please select preferred district</div>
+            </div>
+            <div class="fg">
+              <label data-key="f_type">Counselling Type *</label>
+              <select id="fType">
+                <option value="">-- Select --</option>
+                <option value="govt">Government Quota (TNEA / NEET / TN Health)</option>
+                <option value="mgmt">Management Quota</option>
+                <option value="nri">NRI Quota</option>
+                <option value="tanca">TANCA — PG Engineering</option>
+                <option value="mcc">All India Quota (MCC / NEET AIQ)</option>
+                <option value="both">Both Government &amp; Management</option>
+                <option value="arts_ug">Arts &amp; Science UG Direct Admission</option>
+              </select>
+              <div class="err-msg">Please select counselling type</div>
+            </div>
+          </div>
+          <div class="fg">
+            <label data-key="f_note">Queries or special requirements?</label>
+            <textarea id="fNote" placeholder="e.g. Specific college preference, hostel requirement, budget constraints, special circumstances..."></textarea>
+          </div>
+          <button type="submit" class="submit-btn" data-key="f_submit">Submit Application →</button>
+          <p class="form-note" data-key="f_note2">📞 <a href="tel:9025586660" style="color:var(--accent2);">90255 86660</a> &nbsp;|&nbsp; ✉️ <a href="/cdn-cgi/l/email-protection#accddacbdec3d9dcdf9e9a949ceccbc1cdc5c082cfc3c1" style="color:var(--accent2);"><span class="__cf_email__" data-cfemail="f8998e9f8a978d888bcacec0c8b89f95999194d69b9795">[email&#160;protected]</span></a></p>
         </form>
-        <div class="success-box" id="successBox" style="display:none">🎉 <span data-key="f_success">Application received!</span></div>
+        <div class="success-box" id="successBox">🎉 <span data-key="f_success">Application received! Our counsellor will contact you within 24 hours.</span></div>
       </div>
     </div>
   </div>
@@ -709,8 +827,9 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
         <h2 class="s-title" style="color:#fff"><span data-key="ct_h2a">Let's </span><em data-key="ct_h2em">Talk</em><span data-key="ct_h2b"> — All Streams</span></h2>
         <p class="s-body" style="color:rgba(255,255,255,.5)" data-key="ct_body">Questions about Engineering, MBBS or Arts &amp; Science? Reach out — no jargon, no pressure, just honest guidance.</p>
         <div class="ct-items">
-          <div class="ct-item reveal"><div class="ct-ico ph">📞</div><div class="ct-info"><div class="lbl" data-key="ct1l">Call Us</div><div class="val"><a href="tel:8015936626">+91 80159 36626</a></div></div></div>
-          <div class="ct-item reveal"><div class="ct-ico wa">💬</div><div class="ct-info"><div class="lbl">WhatsApp</div><div class="val"><a href="https://wa.me/918015936626" target="_blank" rel="noopener">+91 80159 36626</a></div></div></div>
+          <div class="ct-item reveal"><div class="ct-ico ph">📞</div><div class="ct-info"><div class="lbl" data-key="ct1l">Call Us</div><div class="val"><a href="tel:9025586660">+91 90255 86660</a></div></div></div>
+          <div class="ct-item reveal"><div class="ct-ico wa">💬</div><div class="ct-info"><div class="lbl">WhatsApp</div><div class="val"><a href="https://wa.me/919025586660" target="_blank" rel="noopener">+91 90255 86660</a></div></div></div>
+          <div class="ct-item reveal"><div class="ct-ico mail">✉️</div><div class="ct-info"><div class="lbl" data-key="ct_email_lbl">Email Us</div><div class="val"><a href="/cdn-cgi/l/email-protection#28495e4f5a475d585b1a1e1018684f45494144064b4745"><span class="__cf_email__" data-cfemail="28495e4f5a475d585b1a1e1018684f45494144064b4745">[email&#160;protected]</span></a></div></div></div>
           <div class="ct-item reveal"><div class="ct-ico loc">📍</div><div class="ct-info"><div class="lbl" data-key="ct3l">Serving</div><div class="val" data-key="ct3v">All of Tamil Nadu</div></div></div>
           <div class="ct-item reveal"><div class="ct-ico hr">⏰</div><div class="ct-info"><div class="lbl" data-key="ct4l">Hours</div><div class="val" data-key="ct4v">Mon–Sat 9AM–7PM · Sun 10AM–4PM</div></div></div>
         </div>
@@ -718,14 +837,14 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
       <div class="contact-right">
         <div class="big-call">
           <div class="lbl" data-key="bc_lbl">Call us directly</div>
-          <div class="number">80159 36626</div>
+          <div class="number">90255 86660</div>
           <div class="sub" data-key="bc_sub">Available 7 days during counselling season</div>
-          <a href="tel:8015936626" data-key="bc_btn">📞 Call Now</a>
+          <a href="tel:9025586660" data-key="bc_btn">📞 Call Now</a>
         </div>
         <div class="wa-strip">
           <div class="wi">💬</div>
           <div class="wt"><h4 data-key="wa_t">WhatsApp Us</h4><p data-key="wa_b">Quick replies, share documents, ask anything.</p></div>
-          <a href="https://wa.me/918015936626" target="_blank" rel="noopener" data-key="wa_btn">Chat →</a>
+          <a href="https://wa.me/919025586660" target="_blank" rel="noopener" data-key="wa_btn">Chat →</a>
         </div>
       </div>
     </div>
@@ -764,14 +883,14 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
     </div>
     <div class="footer-bottom">
       <p data-key="footer_copy">© 2026 AV Mentora Solutions. All rights reserved.</p>
-      <p>📞 <span class="ph">80159 36626</span></p>
+      <p>📞 <span class="ph">90255 86660</span> &nbsp;|&nbsp; ✉️ <a href="/cdn-cgi/l/email-protection#b4d5c2d3c6dbc1c4c786828c84f4d3d9d5ddd89ad7dbd9" style="color:var(--accent);text-decoration:none;font-weight:600;font-size:.69rem;"><span class="__cf_email__" data-cfemail="98f9eeffeaf7ede8ebaaaea0a8d8fff5f9f1f4b6fbf7f5">[email&#160;protected]</span></a></p>
     </div>
   </div>
 </footer>
 
 <div class="fab-group">
-  <a href="https://wa.me/918015936626" target="_blank" rel="noopener" class="fab wa" title="WhatsApp">💬</a>
-  <a href="tel:8015936626" class="fab ph" title="Call">📞</a>
+  <a href="https://wa.me/919025586660" target="_blank" rel="noopener" class="fab wa" title="WhatsApp">💬</a>
+  <a href="tel:9025586660" class="fab ph" title="Call">📞</a>
 </div>
 
 <button class="chat-fab" id="chatFab" onclick="toggleChat()" title="Ask AI Assistant" aria-label="Open AI chat">
@@ -798,16 +917,16 @@ footer{background:var(--footer-bg);padding:44px 0 22px;transition:background .3s
     <button class="chat-send" id="chatSend" onclick="sendChat()" aria-label="Send">&#10148;</button>
   </div>
 </div>
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 var T = {
   en:{
     tagline:"Education Counselling",nav_why:"Why Us",nav_services:"Services",nav_colleges:"Colleges",nav_process:"Process",nav_contact:"Contact",nav_apply:"Apply Now →",
     hero_tag:"Tamil Nadu's Trusted Counselling Partner",hero_h1a:"Expert ",hero_h1em:"Education",hero_h1b:" Counselling",
     hero_sub:"Personalized guidance for TNEA, NEET MBBS, TANCA, TN Health & Arts and Science — tailored to your marks, community, and career goals. We make admissions simple.",
-    hero_cta1:"📋 Fill Application",hero_cta2:"📞 Call 80159 36626",
+    hero_cta1:"📋 Fill Application",hero_cta2:"📞 Call 90255 86660",
     badge1:"TNEA Counselling",badge2:"NEET MBBS",badge3:"TANCA",badge4:"TN Health Sciences",badge5:"Arts & Science",badge6:"Free Consultation",
     hc_label:"Reach Us Directly",cs_call_lbl:"Call Anytime",cs_wa_val:"Chat with us now",cs_loc_lbl:"Service Area",cs_loc_val:"All of Tamil Nadu",hc_cta:"Start Free Consultation →",
-    tick1:"TNEA 2026 Counselling — Register Now",tick2:"NEET MBBS 2026 Admissions — Get Guidance",tick3:"Free Consultation — Call 80159 36626",tick4:"Management Quota — Engineering, MBBS, Arts & Science",tick5:"TANCA MBA / MCA / M.Tech Guidance Available",
+    tick1:"TNEA 2026 Counselling — Register Now",tick2:"NEET MBBS 2026 Admissions — Get Guidance",tick3:"Free Consultation — Call 90255 86660",tick4:"Management Quota — Engineering, MBBS, Arts & Science",tick5:"TANCA MBA / MCA / M.Tech Guidance Available",
     why_eyebrow:"Why AV Mentora",why_h2a:"Counselling That ",why_h2em:"Actually",why_h2b:" Works",why_body:"We built AV Mentora Solutions so every student gets honest, data-backed guidance — for Engineering, MBBS, Arts & Science and more.",
     why1_t:"Personalized Guidance",why1_b:"Whether Engineering, MBBS or Arts — we tailor advice to your marks, community, preferred location and career interests. No generic packages.",
     why2_t:"Cutoff Data Expertise",why2_b:"We use TNEA and NEET cutoff history, category-wise analysis and college records to give you a realistic shortlist.",
@@ -839,13 +958,13 @@ var T = {
     step3t:"Receive College Shortlist",step3b:"Curated list with realistic expectations and a clear plan.",
     step4t:"Counselling Day Support",step4b:"We guide you and accompany you on counselling day.",
     fc_title:"📝 Application Form",fc_sub:"Fields marked * are required. We respond within 24 hours.",
-    gform_title:"Open Application Form",gform_sub:"Opens in a new tab · Takes ~3 minutes",gi1:"Free consultation",gi2:"24-hour response",gi3:"Your data is safe",gform_alt_label:"Prefer to reach us directly?",gform_call:"Call Us",gform_wa:"WhatsApp",
+    gform_title:"Prefer Google Form?",gform_sub:"Easier on mobile — opens in a new tab",gform_btn:"Open Form →",form_or:"— or fill below —",
     fsec1:"📋 Personal Details",fsec2:"🎓 Academic Background",fsec3:"🏫 Counselling Preferences",
     f_name:"Student Name *",f_dob:"Date of Birth",f_mob:"Student Mobile *",f_pmob:"Parent Mobile *",f_email:"Email Address",
     f_school_type:"School Type (6th–12th) *",f_board:"Board of Study *",f_11th_group:"Group in 11th & 12th *",
     f_cutoff:"12th Marks / Cut-off / NEET Score *",f_com:"Community *",f_first_grad:"First Graduate in Family? *",
     f_stream:"Stream / Course *",f_branch:"Preferred Branch *",f_dist:"Preferred District *",f_type:"Counselling Type *",
-    f_note:"Queries or special requirements?",f_submit:"Submit Application →",f_note2:"📞 Prefer to call? Reach us at 80159 36626",
+    f_note:"Queries or special requirements?",f_submit:"Submit Application →",f_note2:"📞 90255 86660 &nbsp;|&nbsp; ✉️ avgroups2680@gmail.com",
     f_success:"Application received! Our counsellor will contact you within 24 hours.",
     proc_eyebrow:"Our Process",proc_h2a:"How We ",proc_h2em:"Guide",proc_h2b:" You",
     p1t:"Initial Call",p1b:"We understand your profile, marks and career goals.",
@@ -853,8 +972,8 @@ var T = {
     p3t:"Shortlisting",p3b:"Best-fit colleges and branches curated for you.",
     p4t:"Doc Check",p4b:"All certificates verified before the big day.",
     p5t:"Admission Day",p5b:"We accompany and assist through the final counselling.",
-    ct_eyebrow:"Contact Us",ct_h2a:"Let's ",ct_h2em:"Talk",ct_h2b:" — All Streams",ct_body:"Questions about Engineering, MBBS or Arts & Science? Reach out — honest guidance only.",
-    ct1l:"Call Us",ct3l:"Serving",ct3v:"All of Tamil Nadu",ct4l:"Hours",ct4v:"Mon–Sat 9AM–7PM · Sun 10AM–4PM",
+    ct_eyebrow:"Contact Us",ct_h2a:"Let's ",ct_h2em:"Talk",ct_h2b:" — All Streams",ct_body:"Questions about Engineering, MBBS or Arts & Science? Call 90255 86660 or email avgroups2680@gmail.com — honest guidance only.",
+    ct1l:"Call Us",ct_email_lbl:"Email Us",ct3l:"Serving",ct3v:"All of Tamil Nadu",ct4l:"Hours",ct4v:"Mon–Sat 9AM–7PM · Sun 10AM–4PM",
     bc_lbl:"Call us directly",bc_sub:"Available 7 days during counselling season",bc_btn:"📞 Call Now",
     wa_t:"WhatsApp Us",wa_b:"Quick replies, share documents, ask anything.",wa_btn:"Chat →",
     footer_brand:"AV Mentora Solutions — Tamil Nadu's trusted education counselling consultancy for all streams. Honest guidance and personalized support.",
@@ -866,10 +985,10 @@ var T = {
     tagline:"கல்வி ஆலோசனை",nav_why:"ஏன் நாங்கள்",nav_services:"சேவைகள்",nav_colleges:"கல்லூரிகள்",nav_process:"செயல்முறை",nav_contact:"தொடர்பு",nav_apply:"விண்ணப்பிக்கவும் →",
     hero_tag:"தமிழ்நாட்டின் நம்பகமான ஆலோசனை நிறுவனம்",hero_h1a:"நிபுணர் ",hero_h1em:"கல்வி",hero_h1b:" ஆலோசனை",
     hero_sub:"TNEA, NEET MBBS, TANCA, TN சுகாதாரம் மற்றும் கலை அறிவியல் ஆலோசனை — உங்கள் மதிப்பெண்கள், சமூகம் மற்றும் தொழில் இலக்குகளுக்கு ஏற்ப தனிப்பயனாக்கப்பட்டது.",
-    hero_cta1:"📋 விண்ணப்பம் நிரப்பவும்",hero_cta2:"📞 அழையுங்கள் 80159 36626",
+    hero_cta1:"📋 விண்ணப்பம் நிரப்பவும்",hero_cta2:"📞 அழையுங்கள் 90255 86660",
     badge1:"TNEA ஆலோசனை",badge2:"NEET MBBS",badge3:"TANCA",badge4:"TN சுகாதார அறிவியல்",badge5:"கலை அறிவியல்",badge6:"இலவச கலந்தாய்வு",
     hc_label:"நேரடியாக தொடர்பு கொள்ளுங்கள்",cs_call_lbl:"எப்போதும் அழையுங்கள்",cs_wa_val:"இப்போது அரட்டையடிக்கவும்",cs_loc_lbl:"சேவை பகுதி",cs_loc_val:"தமிழ்நாடு முழுவதும்",hc_cta:"இலவச கலந்தாய்வு தொடங்கவும் →",
-    tick1:"TNEA 2026 ஆலோசனை — இப்போதே பதிவு செய்யுங்கள்",tick2:"NEET MBBS 2026 சேர்க்கை — வழிகாட்டுதல் பெறுங்கள்",tick3:"இலவச கலந்தாய்வு — அழையுங்கள் 80159 36626",tick4:"மேலாண்மை ஒதுக்கீடு — பொறியியல், MBBS, கலை அறிவியல்",tick5:"TANCA MBA / MCA / M.Tech வழிகாட்டுதல் கிடைக்கிறது",
+    tick1:"TNEA 2026 ஆலோசனை — இப்போதே பதிவு செய்யுங்கள்",tick2:"NEET MBBS 2026 சேர்க்கை — வழிகாட்டுதல் பெறுங்கள்",tick3:"இலவச கலந்தாய்வு — அழையுங்கள் 90255 86660",tick4:"மேலாண்மை ஒதுக்கீடு — பொறியியல், MBBS, கலை அறிவியல்",tick5:"TANCA MBA / MCA / M.Tech வழிகாட்டுதல் கிடைக்கிறது",
     why_eyebrow:"ஏன் AV Mentora",why_h2a:"உண்மையில் ",why_h2em:"வேலை செய்யும்",why_h2b:" ஆலோசனை",why_body:"பொறியியல், MBBS மற்றும் கலை அறிவியல் சேர்க்கையிலும் ஒவ்வொரு மாணவரும் நேர்மையான வழிகாட்டுதல் பெற வேண்டும் என்பதற்காக AV Mentora Solutions-ஐ உருவாக்கினோம்.",
     why1_t:"தனிப்பயனாக்கப்பட்ட வழிகாட்டுதல்",why1_b:"பொறியியலோ, MBBS-ஆ அல்லது கலை அறிவியலோ — உங்கள் மதிப்பெண்கள் மற்றும் ஆர்வங்களுக்கு ஏற்ப ஆலோசனை வழங்குகிறோம்.",
     why2_t:"கட்-ஆஃப் தரவு நிபுணத்துவம்",why2_b:"TNEA மற்றும் NEET கட்-ஆஃப் வரலாறை பயன்படுத்தி யதார்த்தமான கல்லூரி பட்டியல் வழங்குகிறோம்.",
@@ -901,13 +1020,13 @@ var T = {
     step3t:"கல்லூரி பட்டியல் பெறுங்கள்",step3b:"யதார்த்தமான எதிர்பார்ப்புகளுடன் தொகுக்கப்பட்ட பட்டியல்.",
     step4t:"ஆலோசனை நாள் ஆதரவு",step4b:"தேர்வு நிரப்புதல் வழிகாட்டி ஆலோசனை நாளில் உங்களுடன் இருக்கிறோம்.",
     fc_title:"📝 விண்ணப்பப் படிவம்",fc_sub:"* குறிக்கப்பட்ட புலங்கள் கட்டாயமானவை. 24 மணி நேரத்திற்குள் பதிலளிப்போம்.",
-    gform_title:"விண்ணப்பப் படிவம் திறக்கவும்",gform_sub:"புதிய தாவலில் திறக்கும் · 3 நிமிடங்கள் ஆகும்",gi1:"இலவச ஆலோசனை",gi2:"24 மணி நேர பதில்",gi3:"உங்கள் தரவு பாதுகாப்பானது",gform_alt_label:"நேரடியாக தொடர்பு கொள்ள?",gform_call:"அழைக்கவும்",gform_wa:"வாட்ஸ்அப்",
+    gform_title:"Google Form விரும்புகிறீர்களா?",gform_sub:"மொபைலில் எளிது",gform_btn:"படிவம் திற →",form_or:"— அல்லது கீழே நிரப்பவும் —",
     fsec1:"📋 தனிப்பட்ட விவரங்கள்",fsec2:"🎓 கல்வி பின்னணி",fsec3:"🏫 ஆலோசனை விருப்பங்கள்",
     f_name:"மாணவர் பெயர் *",f_dob:"பிறந்த தேதி",f_mob:"மாணவர் கையடக்கி *",f_pmob:"பெற்றோரின் கையடக்கி *",f_email:"மின்னஞ்சல் முகவரி",
     f_school_type:"பள்ளி வகை (6–12) *",f_board:"படிக்கும் வாரியம் *",f_11th_group:"11, 12 ஆம் வகுப்பு குழு *",
     f_cutoff:"12ஆம் வகுப்பு மதிப்பெண் / கட்-ஆஃப் / NEET *",f_com:"சமூகம் *",f_first_grad:"குடும்பத்தில் முதல் பட்டதாரியா? *",
     f_stream:"படிப்பு நிலை *",f_branch:"விரும்பிய கிளை *",f_dist:"விரும்பிய மாவட்டம் *",f_type:"ஆலோசனை வகை *",
-    f_note:"கேள்விகள் அல்லது தேவைகள்?",f_submit:"விண்ணப்பம் சமர்ப்பிக்கவும் →",f_note2:"📞 அழைக்க விரும்புகிறீர்களா? 80159 36626 இல் அழையுங்கள்",
+    f_note:"கேள்விகள் அல்லது தேவைகள்?",f_submit:"விண்ணப்பம் சமர்ப்பிக்கவும் →",f_note2:"📞 90255 86660 &nbsp;|&nbsp; ✉️ avgroups2680@gmail.com",
     f_success:"விண்ணப்பம் பெறப்பட்டது! எங்கள் ஆலோசகர் 24 மணி நேரத்திற்குள் தொடர்பு கொள்வார்.",
     proc_eyebrow:"எங்கள் செயல்முறை",proc_h2a:"நாங்கள் உங்களை எவ்வாறு ",proc_h2em:"வழிகாட்டுகிறோம்",proc_h2b:"",
     p1t:"ஆரம்ப அழைப்பு",p1b:"இலவச அழைப்பில் சுயவிவரம், மதிப்பெண்கள் மற்றும் தொழில் இலக்குகளை புரிந்துகொள்கிறோம்.",
@@ -915,8 +1034,8 @@ var T = {
     p3t:"குறுகிய பட்டியல்",p3b:"உங்களுக்காக தொகுக்கப்பட்ட சிறந்த கல்லூரிகள் மற்றும் நிபுணத்துவங்கள்.",
     p4t:"ஆவண சரிபார்ப்பு",p4b:"முக்கியமான நாளுக்கு முன் அனைத்து சான்றிதழ்களும் சரிபார்க்கப்படும்.",
     p5t:"சேர்க்கை நாள்",p5b:"இறுதி ஆலோசனையில் உங்களுடன் சென்று உதவுகிறோம்.",
-    ct_eyebrow:"தொடர்பு கொள்ளுங்கள்",ct_h2a:"பேசுவோம் ",ct_h2em:"—",ct_h2b:" அனைத்து நிலைகளும்",ct_body:"எந்த நிலையிலும் — பொறியியல், MBBS, கலை அறிவியல் — கேள்விகள் உள்ளதா? நேர்மையான வழிகாட்டுதல் மட்டுமே.",
-    ct1l:"அழையுங்கள்",ct3l:"சேவை பகுதி",ct3v:"தமிழ்நாடு முழுவதும்",ct4l:"நேரம்",ct4v:"திங்கள்–சனி காலை 9–மாலை 7 · ஞாயிறு காலை 10–மாலை 4",
+    ct_eyebrow:"தொடர்பு கொள்ளுங்கள்",ct_h2a:"பேசுவோம் ",ct_h2em:"—",ct_h2b:" அனைத்து நிலைகளும்",ct_body:"எந்த நிலையிலும் — பொறியியல், MBBS, கலை அறிவியல் — கேள்விகள் உள்ளதா? 90255 86660 அழையுங்கள் அல்லது avgroups2680@gmail.com மின்னஞ்சல் அனுப்புங்கள்.",
+    ct1l:"அழையுங்கள்",ct_email_lbl:"மின்னஞ்சல்",ct3l:"சேவை பகுதி",ct3v:"தமிழ்நாடு முழுவதும்",ct4l:"நேரம்",ct4v:"திங்கள்–சனி காலை 9–மாலை 7 · ஞாயிறு காலை 10–மாலை 4",
     bc_lbl:"நேரடியாக அழையுங்கள்",bc_sub:"ஆலோசனை காலத்தில் வாரம் 7 நாட்களும் கிடைக்கிறோம்",bc_btn:"📞 இப்போது அழையுங்கள்",
     wa_t:"WhatsApp அனுப்பவும்",wa_b:"விரைவான பதில்கள், ஆவணங்கள் பகிர்வு.",wa_btn:"அரட்டை →",
     footer_brand:"AV Mentora Solutions — தமிழ்நாட்டின் நம்பகமான கல்வி ஆலோசனை நிறுவனம் — அனைத்து நிலைகளுக்கும். நேர்மையான வழிகாட்டுதல் மற்றும் தனிப்பயனாக்கப்பட்ட ஆதரவு.",
@@ -1000,6 +1119,18 @@ function updateCutoffHint() {
   }
 }
 
+/* SCROLL REVEAL — declared early so switchStream can reference ro */
+var ro = new IntersectionObserver(function(entries){
+  entries.forEach(function(entry){
+    if (entry.isIntersecting) {
+      var el = entry.target;
+      var idx = Array.from(el.parentElement.children).indexOf(el);
+      el.style.transitionDelay = (idx * 0.05) + "s";
+      el.classList.add("in"); ro.unobserve(el);
+    }
+  });
+}, { threshold:0.07 });
+
 function switchStream(s) {
   document.querySelectorAll(".stab").forEach(function(b){ b.classList.remove("active"); });
   document.querySelectorAll(".stream-panel").forEach(function(p){ p.classList.remove("active"); });
@@ -1042,8 +1173,77 @@ function setLang(l) {
   document.documentElement.lang = l === "ta" ? "ta" : "en";
 }
 
-/* Form replaced with Google Form embed — stub listeners to prevent errors */
-document.getElementById("appForm").addEventListener("submit", function(e){ e.preventDefault(); });
+document.getElementById("appForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+  this.querySelectorAll(".err").forEach(function(el){ el.classList.remove("err"); });
+  var valid = true;
+  var fields = [
+    { id:"fName",       ok:function(v){ return v.trim().length >= 2; } },
+    { id:"fMob",        ok:function(v){ return /^[6-9]\d{9}$/.test(v.trim()); } },
+    { id:"fPmob",       ok:function(v){ return /^[6-9]\d{9}$/.test(v.trim()); } },
+    { id:"fSchoolType", ok:function(v){ return v !== ""; } },
+    { id:"fBoard",      ok:function(v){ return v !== ""; } },
+    { id:"f11thGroup",  ok:function(v){ return v !== ""; } },
+    { id:"fCutoff",     ok:function(v){ return v !== "" && parseFloat(v) > 0; } },
+    { id:"fCom",        ok:function(v){ return v !== ""; } },
+    { id:"fFirstGrad",  ok:function(v){ return v !== ""; } },
+    { id:"fStream",     ok:function(v){ return v !== ""; } },
+    { id:"fBranch",     ok:function(v){ return v !== ""; } },
+    { id:"fDist",       ok:function(v){ return v !== ""; } },
+    { id:"fType",       ok:function(v){ return v !== ""; } }
+  ];
+  fields.forEach(function(f) {
+    var el = document.getElementById(f.id);
+    if (el && !f.ok(el.value)) { el.classList.add("err"); valid = false; }
+  });
+  if (!valid) {
+    var fe = this.querySelector(".err");
+    if (fe) fe.scrollIntoView({ behavior:"smooth", block:"center" });
+    return;
+  }
+  var btn = this.querySelector(".submit-btn");
+  btn.textContent = currentLang === "ta" ? "சமர்ப்பிக்கிறோம்..." : "Submitting...";
+  btn.disabled = true;
+  var fd = {
+    student_name:   document.getElementById("fName").value.trim(),
+    date_of_birth:  document.getElementById("fDob").value || null,
+    student_mobile: document.getElementById("fMob").value.trim(),
+    parent_mobile:  document.getElementById("fPmob").value.trim(),
+    email:          document.getElementById("fEmail").value.trim() || null,
+    school_type:    document.getElementById("fSchoolType").value,
+    board:          document.getElementById("fBoard").value,
+    group_11_12:    document.getElementById("f11thGroup").value,
+    cutoff:         parseFloat(document.getElementById("fCutoff").value),
+    community:      document.getElementById("fCom").value,
+    first_graduate: document.getElementById("fFirstGrad").value,
+    stream:         document.getElementById("fStream").value,
+    branch:         document.getElementById("fBranch").value,
+    district:       document.getElementById("fDist").value,
+    counselling_type: document.getElementById("fType").value,
+    notes:          document.getElementById("fNote").value.trim() || null
+  };
+  var p = (typeof saveToSupabase === "function") ? saveToSupabase(fd) : Promise.resolve(true);
+  p.then(function() {
+    var box = document.getElementById("successBox");
+    box.style.display = "block";
+    document.getElementById("appForm").reset();
+    updateBranchOptions(); updateCutoffHint();
+    var ch = document.getElementById("cutoffHint");
+    if (ch) ch.classList.remove("show");
+    box.scrollIntoView({ behavior:"smooth", block:"center" });
+    setTimeout(function(){ box.style.display="none"; }, 9000);
+  }).catch(function(err){
+    alert("Submission failed. Please call 90255 86660.\n" + (err.message||""));
+  }).finally(function(){
+    btn.textContent = T[currentLang].f_submit;
+    btn.disabled = false;
+  });
+});
+
+document.getElementById("appForm").querySelectorAll("input,select,textarea").forEach(function(el){
+  el.addEventListener("input", function(){ this.classList.remove("err"); });
+  el.addEventListener("change", function(){ this.classList.remove("err"); });
+});
 
 /* MARKDOWN PARSER */
 function parseMarkdown(md) {
@@ -1067,7 +1267,7 @@ function parseMarkdown(md) {
 
 /* AI CHAT */
 var chatOpen = false, chatHistory = [], chatBusy = false;
-var SYSTEM_PROMPT = "You are a helpful admission counselling assistant for AV Mentora Solutions, a Tamil Nadu education counselling consultancy. Answer questions about TNEA engineering counselling, NEET MBBS admissions, TANCA PG admissions, TN Health Sciences, Arts & Science college admissions, management quota, documents, cutoff marks, college selection, and Tamil Nadu admission processes. Be concise and friendly. Use **bold** for key terms and - bullets for lists. If asked for specific cutoffs you don't have, suggest calling AV Mentora Solutions at 80159 36626. Never invent cutoff numbers. Respond in the same language the user writes in (Tamil or English).";
+var SYSTEM_PROMPT = "You are a helpful admission counselling assistant for AV Mentora Solutions, a Tamil Nadu education counselling consultancy. Answer questions about TNEA engineering counselling, NEET MBBS admissions, TANCA PG admissions, TN Health Sciences, Arts & Science college admissions, management quota, documents, cutoff marks, college selection, and Tamil Nadu admission processes. Be concise and friendly. Use **bold** for key terms and - bullets for lists. If asked for specific cutoffs you don't have, suggest calling AV Mentora Solutions at 90255 86660. Never invent cutoff numbers. Respond in the same language the user writes in (Tamil or English).";
 
 function toggleChat() {
   chatOpen = !chatOpen;
@@ -1110,51 +1310,42 @@ function sendChat() {
   chatBusy = true;
   document.getElementById("chatSend").disabled = true;
   var loading = addLoadingMsg();
-  fetch("https://api.anthropic.com/v1/messages", {
-    method:"POST",
-    headers:{"Content-Type":"application/json","anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-    body:JSON.stringify({ model:"claude-sonnet-4-20250514", max_tokens:500, system:SYSTEM_PROMPT, messages:chatHistory.slice(-10) })
+
+  /* Build Gemini-format contents array from chatHistory */
+  var contents = chatHistory.map(function(m) {
+    return { role: m.role === "assistant" ? "model" : "user", parts: [{ text: m.content }] };
+  });
+
+  fetch("https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyDxSOzR5XL5LOIxTSWzG9HGsLFu6F24GuU", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      system_instruction: { parts: [{ text: SYSTEM_PROMPT }] },
+      contents: contents,
+      generationConfig: { maxOutputTokens: 500, temperature: 0.7 }
+    })
   })
-  .then(function(r){ return r.json(); })
+  .then(function(r) { return r.json(); })
   .then(function(data) {
     loading.remove();
-    var reply = (data.content && data.content[0] && data.content[0].text) ? data.content[0].text : "Sorry, I could not connect. Please call us at 📞 80159 36626!";
-    chatHistory.push({ role:"assistant", content:reply });
+    var reply = "";
+    try { reply = data.candidates[0].content.parts[0].text; } catch(e) { reply = ""; }
+    if (!reply) {
+      addBotMsg("I am having trouble connecting right now. Please call us at 📞 90255 86660!");
+      chatBusy = false; document.getElementById("chatSend").disabled = false;
+      return;
+    }
+    chatHistory.push({ role: "assistant", content: reply });
     addBotMsg(reply);
   })
   .catch(function() {
     loading.remove();
-    addBotMsg("I am having trouble connecting. Please call us at 📞 80159 36626!");
+    addBotMsg("I am having trouble connecting. Please call us at 📞 90255 86660!");
   })
   .finally(function() { chatBusy = false; document.getElementById("chatSend").disabled = false; });
 }
 
-/* SCROLL REVEAL */
-var ro = new IntersectionObserver(function(entries){
-  entries.forEach(function(entry){
-    if (entry.isIntersecting) {
-      var el = entry.target;
-      var idx = Array.from(el.parentElement.children).indexOf(el);
-      el.style.transitionDelay = (idx * 0.05) + "s";
-      el.classList.add("in"); ro.unobserve(el);
-    }
-  });
-}, { threshold:0.07 });
 document.querySelectorAll(".reveal").forEach(function(el){ ro.observe(el); });
-
-/* NAV HIGHLIGHT */
-var navSections = ["why","services","colleges","apply","process","contact"];
-window.addEventListener("scroll", function(){
-  var pos = window.scrollY + 80;
-  navSections.forEach(function(id){
-    var sec = document.getElementById(id); if (!sec) return;
-    var active = pos >= sec.offsetTop && pos < sec.offsetTop + sec.offsetHeight;
-    document.querySelectorAll('.nav-links a[onclick*="navTo(\''+id+'\')"]').forEach(function(a){
-      a.style.color = active ? "var(--accent)" : "";
-      a.style.background = active ? "var(--bg2)" : "";
-    });
-  });
-}, { passive:true });
 </script>
 </body>
 </html>
